@@ -1,0 +1,13 @@
+<%= comment.user.email %> says at <%= comment.updated_at %>
+<br>
+<%= comment.content.html_safe %>
+<br>
+<br>
+
+<ul>
+	<% comments[comment.id].each do |child| %>
+		<li>
+			<%= render partial: "comments/comment", locals: { comment: child, comments: comments } %>
+		</li>
+	<% end %>
+</ul>
