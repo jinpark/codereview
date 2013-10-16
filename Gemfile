@@ -40,6 +40,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'devise'
+gem 'jquery-ui-rails'
 
 group :development do
   gem "better_errors"

@@ -1,6 +1,8 @@
 <li><a href="<%= code_url(code) %>"><%= code.title %></a> by <%= code.user.email %>
 	<br>
 	<br>
-	<%= code.post.html_safe %>
+	<div id="resizable">
+		<%= code.post.html_safe %>
+	</div>
 </li>
 
