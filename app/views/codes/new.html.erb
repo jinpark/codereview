@@ -1,16 +1,19 @@
+<h1>Add New Code</h1>
+<h3>Use <a href="http://pastebin.com/">Pastebin</a> to add your code. Use the iframe embedding option.</h3>
+
 <form action="<%= codes_url %>" method="post" >
 	
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 	
 	<label for="code_title">Code title</label>
 	  <input type="text" id="code_title" name="code[title]"
-	  value="Title">
+	  value="">
 		
 		<br>
 		
 		<label for="code_content">Code Content</label>
 		<textarea rows='6' cols='100' name="code[post]">
-			Put pastebin embed (html) code here with comments.
+			Put pastebin embed (iframe) code here with comments.
 		</textarea>
 		
 		<input type="submit" value="Submit new code">
