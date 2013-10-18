@@ -3,8 +3,9 @@ Codereview::Application.routes.draw do
 
   resources :codes
   resources :comments
+  resources :weeks
   
-  root :to => "Codes#index"
+  root :to => "Weeks#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

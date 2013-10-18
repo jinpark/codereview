@@ -1,0 +1,15 @@
+<h1>Learn Python the Hard Way - Code Review</h1>
+
+<ul>
+	<%= render @weeks %>
+</ul>
+
+<%= link_to "Create new week", new_week_url %>
+
+<script>
+
+$(document).ready(function() {
+	$('.resizable').resizable()
+});
+
+</script>
